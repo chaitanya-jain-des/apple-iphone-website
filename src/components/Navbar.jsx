@@ -12,12 +12,13 @@ const Navbar = () => {
       <div className="flex max-md:hidden">
         {navLists.map((link) => {
           return (
-            <div
+            <a
               className="mx-4 text-lg text-gray cursor-pointer hover:text-white transition"
               key={link}
+              href=""
             >
               {link}
-            </div>
+            </a>
           );
         })}
       </div>
