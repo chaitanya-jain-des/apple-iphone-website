@@ -1,10 +1,12 @@
-function App() {
+import Navbar from "./components/Navbar";
 
+function App() {
   return (
     <>
-      Apple IPhone
+      <Navbar />
+      <div className="">Apple IPhone</div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
