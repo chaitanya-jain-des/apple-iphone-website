@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Use box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: white;
+  width: 100dvw;
+  height: 100%;
+  background: #000;
+}
+
+@layer utilities {
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+}
